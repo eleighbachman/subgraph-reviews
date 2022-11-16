@@ -1,7 +1,7 @@
 const {ApolloServer, gql} = require('apollo-server');
 const {buildSubgraphSchema} = require('@apollo/subgraph');
 const {readFileSync} = require('fs');
-
+// test comment
 const typeDefs = gql(readFileSync('./reviews.graphql', {encoding: 'utf-8'}));
 const resolvers = require('./resolvers');
 const ReviewsAPI = require('./datasources/ReviewsApi.js');
